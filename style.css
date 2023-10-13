@@ -133,6 +133,8 @@ header .content p {
 }
 header .content .anime {
     position: relative;
+    font-size: 15px;
+
 }
 header .content .anime::after {
     content: "|";
@@ -168,12 +170,16 @@ header .content .anime::after {
         left: 0;
         z-index: 99;
     }
+    header nav .container .list ul li:first-child a{
+    color: white;
+    }
     header nav .container .list ul li {
         float: none;
         padding: 10px ;
         background-color: #ff305b;
         visibility: hidden;
         opacity: 0;
+        /* color: white; */
         transition: .5s all;
     }
     header nav .container .icon {
@@ -436,8 +442,12 @@ header .content .anime::after {
     margin-inline: 10px;
     font-size: 17px;
     cursor: pointer;
+    transition: .3s color;
 }
 #Portfolio .btns button:first-child {
+    color: #ff305b;
+}
+#Portfolio .btns button:hover {
     color: #ff305b;
 }
 #Portfolio .card-img .imgs {
@@ -542,6 +552,7 @@ header .content .anime::after {
     height: 0px;
     top: 0;
     left: 0;
+    /* z-index: -3; */
     border: #ff305b 100px solid;
     border-color: #ff305b  transparent transparent #ff305b;
 
@@ -582,7 +593,7 @@ header .content .anime::after {
         margin-top: 50px;
         padding-top: 50px;
         width: 90%;
-        padding-inline: 15px;
+        padding-inline: 20px;
 
     }
 }
@@ -640,15 +651,15 @@ header .content .anime::after {
 
 /* -------------------- contact-------------------- */
 
-#contact {
+#Contact {
     margin: 50px 0px;
 }
 
-#contact .form-contact {
+#Contact .form-contact {
     margin: 50px 0px;
 
 }
-#contact .form-contact form input:nth-child(1) {
+#Contact .form-contact form input:nth-child(1) {
     width: 49%;
     margin-right: 1.5%;
     height: 40px;
@@ -657,7 +668,7 @@ header .content .anime::after {
     padding-inline: 10px;
 
 }
-#contact .form-contact form input:nth-child(2) {
+#Contact .form-contact form input:nth-child(2) {
     width: 49%;
     /* margin-left: 1%; */
     height: 40px;
@@ -665,7 +676,7 @@ header .content .anime::after {
     border: 1px solid #bbb;
     padding-inline: 10px;
 }
-#contact .form-contact form input:nth-child(3) {
+#Contact .form-contact form input:nth-child(3) {
     width: 100%;
     margin-top: 20px;
     height: 40px;
@@ -673,8 +684,9 @@ header .content .anime::after {
     border: 1px solid #bbb;
     padding-inline: 10px;
 }
-#contact .form-contact form textarea{
+#Contact .form-contact form textarea{
     width: 100%;
+    padding-top: 10px;
     margin-top: 20px;
     height: 120px;
     border-radius: 5px;
@@ -683,7 +695,7 @@ header .content .anime::after {
     font-family: inherit;
 }
 
-#contact .form-contact form button {
+#Contact .form-contact form button {
     padding: 15px;
     background-color: #ff305b;
     color: white;
@@ -696,15 +708,15 @@ header .content .anime::after {
     cursor: not-allowed;
     
 }
-#contact .form-contact form button:hover {
+#Contact .form-contact form button:hover {
     background-color: rgb(238, 75, 0);
 }
 @media screen and (max-width :768px) {
-    #contact .form-contact form input:nth-child(1) {
+    #Contact .form-contact form input:nth-child(1) {
         width: 100%;
     
     }
-    #contact .form-contact form input:nth-child(2) {
+    #Contact .form-contact form input:nth-child(2) {
         width: 100%;
         margin-top: 20px;
     }
